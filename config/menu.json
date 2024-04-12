@@ -1,0 +1,67 @@
+{
+  "main": [
+    {
+      "name": "HOME",
+      "url": "/"
+    },
+    {
+      "name": "KITCHEN REMODELING",
+      "url": "/kitchen-remodeling"
+    },
+    {
+      "name": "CABINET REFACING",
+      "url": "/cabinet-refacing"
+    },
+    {
+      "name": "COUNTERTOPS",
+      "url": "/counter-tops"
+    }
+  
+  ],
+  "footer": [
+    {
+      "name": "MORDEN KITCHEN",
+      "menu": [
+        {
+          "text": "KITCHEN REMODELING",
+          "url": "/kitchen-remodeling"
+        }
+       
+      ]
+    },
+    {
+      "name": "SERVICES",
+      "menu": [
+        {
+          "text": "COUNTER TOP",
+          "url": "#"
+        },
+        {
+          "text": "KITCHEN REMODELING",
+          "url": "kitchen-counter-tops"
+        },
+        {
+          "text": "KITCHEN CABINETS",
+          "url": "/kitchen-cabinets"
+        }
+      ]
+    },
+    {
+      "name": "SURPOT",
+      "menu": [
+        {
+          "text": "FAQ",
+          "url": "/faq"
+        },
+        {
+          "text": "Privacy Policy",
+          "url": "#"
+        },
+        {
+          "text": "Terms & Conditions",
+          "url": "#"
+        }
+      ]
+    }
+  ]
+}
