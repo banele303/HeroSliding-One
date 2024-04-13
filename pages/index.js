@@ -114,7 +114,7 @@ const Home = ({ frontmatter }) => {
           </section>
         );
       })}
- <div className="w-full">
+ <div className="w-full flex flex-col justify-center px-[2rem] md:px-[6rem]">
                         <h3 className="text-[19px] font-bold">For All Your Kitchen Countertop Needs </h3>
                         <p className="text-[16px] leading-8 md:text-[17px] pt-6">Our team of skilled professionals is dedicated to delivering the highest quality craftsmanship and exceptional customer service.
 <br/>
