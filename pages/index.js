@@ -37,7 +37,7 @@ const Home = ({ frontmatter }) => {
                 <Navbar/>
     
       {/* Banner */}
-      <section className="section pt-[15rem] pb-[50px]">
+      <section className="section pb-[50px]">
        <HomeHero/>
       </section>
 
