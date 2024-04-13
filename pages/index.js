@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@layouts/components/Navbar";
 import Head from "next/head";
+import Footer from "@layouts/partials/Footer";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
@@ -189,6 +190,8 @@ Trust us to handle every step of the process, from initial design consultation t
 
       {/* Cta */}
       <Cta cta={call_to_action} />
+
+                                          <Footer/>
     </div>
   );
 };
