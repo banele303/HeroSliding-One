@@ -276,7 +276,7 @@ If you prefer a maintenance-free appearance, synthetic doors like laminate are i
                 <div>
                     <h3 className="text-center text-white text-[18px] md:text-[24px] ">Designing The Perfect Layout</h3>
                     <p className="text-[16px] text-white leading-8 md:text-[19x] pt-6 md:px-[4rem]">
-                        Whether you're dreaming of a spacious open-concept kitchen or a compact
+                        Whether you&apos;re dreaming of a spacious open-concept kitchen or a compact
                         and efficient design, finding the right layout is essential to creating a
                         space that suits your needs and enhances your daily life.
                         <br />
