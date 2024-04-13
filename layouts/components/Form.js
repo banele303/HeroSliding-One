@@ -8,8 +8,8 @@ export default function NewForm() {
 
     return (
         <form className='bg-black md:mt-[-2rem] py-[2rem] px-5 w-full md:max-w-[300px] rounded-md' >
-            <h3 className='text-white text-[18px] md:text-[18px] text-center'>GET 10% OFF YOUR</h3>
-            <h3 className='text-blue-600 text-[16px] py-3  md:text-[15px]'>KITCHEN REFACING & REPLACING!*</h3>
+            <h3 className='text-white text-[18px] md:text-[18px] text-center'>GET 15% OFF YOUR</h3>
+            <h3 className='text-blue-600 text-[16px] py-3  md:text-[15px]'>KITCHEN REFACING & REPLACING!</h3>
 
             <label className="input mt-3  flex items-center gap-2">
                 <input type="text" id="Name" className="grow border-none" name="firstName" placeholder="Full Name"

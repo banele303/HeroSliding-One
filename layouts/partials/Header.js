@@ -56,7 +56,7 @@ const Header = () => {
             navOpen ? "max-h-[1000px]" : "max-h-0"
           }`}
         >
-          <ul className="navbar-nav block w-full md:flex md:w-auto lg:space-x-2">
+          <ul className="navbar-nav block w-full mt-[3rem] md:mt-0 md:flex md:w-auto lg:space-x-2">
             {main.map((menu, i) => (
               <React.Fragment key={`menu-${i}`}>
                 {menu.hasChildren ? (
@@ -72,7 +72,7 @@ const Header = () => {
                         <li className="nav-dropdown-item" key={`children-${i}`}>
                           <Link
                             href={child.url}
-                            className="nav-dropdown-link block"
+                            className="nav-dropdown-link block "
                           >
                             {child.name}
                           </Link>
@@ -81,7 +81,7 @@ const Header = () => {
                     </ul>
                   </li>
                 ) : (
-                  <li className="nav-item">
+                  <li className="nav-item ">
                     <Link
                       href={menu.url}
                       onClick={() => setNavOpen(false)}

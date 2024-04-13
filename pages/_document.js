@@ -15,8 +15,9 @@ const Document = () => {
           href={favicon}
         />
         {/* theme meta */}
-        <meta name="theme-name" content="next-boilerplate" />
-        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="theme-name" content="Modern Kitchen" />
+        <meta name="msapplication-TileColor" content="Modern Kitchen" />
+       
         <meta
           name="theme-color"
           media="(prefers-color-scheme: light)"

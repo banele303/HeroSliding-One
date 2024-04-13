@@ -1,26 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
+import Base from "@layouts/Baseof";
 import NewForm from "../layouts/components/Form";
-import KitchenRemodeling from "../public/images/remodeling-hero.jpg";
-import KitchenRImage from "../public/images/kit3.png"
+import KitchenRemodeling from "../public/images/kitt1.png";
+import Header from "@layouts/partials/Header";
+import KitchenRImage from "../public/images/kitchen5.jpg"
+import backgroundImage from "../public/images/kitt1.png"
 import Footer from "@layouts/partials/Footer";
-import config from "@config/config.json";
-
 import Head from "next/head";
 import Navbar from "@layouts/components/Navbar";
 
-export default function KitchenRemodelingPage({ frontmatter }) {
-   
-    const { title } = config.site;
-  
+export default function CounterTopPage() {
+
     return (
-      
         <div className="relative h-screen bg-white">
-                   <Head>
-        <title>Modern Kitchen - All you Kitchen Remodeling</title>
+             <Head>
+        <title>Modern Kitchen - Counter Top refacing</title>
         <meta
           name="description"
-          content="We are the best at kitchen remodeling for all your kitchen needs"
+          content="We are the best at Countetop foa all your kitchen needs"
         />
         <meta property="og:type" content="website" />
 
@@ -31,24 +29,24 @@ export default function KitchenRemodelingPage({ frontmatter }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-           
+        
                 <Navbar/>
             <div>
-                <div className="relative h-[100vh] md:h-[90vh] w-full ">
-                    <Image quality={100} src={KitchenRemodeling} className="brightness-50 md:h-[90vh] h-full w-full object-cover" />
+                <div className="relative h-[100vh] md:h-[80vh] w-full ">
+                    <Image quality={100} src={KitchenRemodeling} className="brightness-50 md:h-[80vh] h-full w-full object-cover" />
                     <div
                         className="absolute bottom-0 left-0 right-0 top-0 flex flex-col justify-center items-center gap-8"
                     >
 
 
-                        <div className="px-[2rem] pt-[16rem] md:pt-[10rem]">
+                        <div className="px-[2rem] pt-[16rem] md:mt-[8rem]">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 md:pt-[7rem] md:pl-[3rem] md:h-[680px]">
                                 <div>
-                                    <h1 className="text-2xl md:text-4xl pt-[1rem] md:pt-[3rem] leading-9 text-slate-100 font-extrabold">
+                                    <h1 className="text-2xl md:text-5xl pt-[1rem] md:pt-[3rem] leading-9 text-slate-100 font-extrabold">
                                         GET 15% OFF FOR YOUR
                                     </h1>
-                                    <p className="text-xl md:text-3xl pt-3 py-6  text-slate-300 font-bold">
-                                        KITCHEN REMODELING | REFACING & REPLACING
+                                    <p className="text-xl md:text-3xl pt-3 py-6  text-slate-200 font-bold">
+                                        KITCHEN  COUNTERTOP
                                     </p>
                                     <div className="flex flex-col justify-start mt-6 px-4 md:px-[4rem]  md:ml-[-4rem]">
                                         <button className="bg-orange-500 no-underline group w-[15rem] cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-block">
@@ -60,7 +58,7 @@ export default function KitchenRemodelingPage({ frontmatter }) {
                                                     href=""
                                                     className="text-center mx-auto"
                                                 >
-                                                    REQUEST SERVICE
+                                                    FREE IN-HOME ESTIMATE
                                                 </Link>
                                                 <svg
                                                     fill="none"
@@ -111,18 +109,18 @@ export default function KitchenRemodelingPage({ frontmatter }) {
 
             {/*  section 2 */}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem] px-[2rem] md:px-[6rem]  mt-[13rem]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem] px-[2rem] md:px-[6rem] mt-[10rem]">
 
                 <div>
-                    <h3 className="font-Poppins">
-                        Let Our Kitchen Remodeling Experts Transform Your Kitchen
+                    <h3 className="">
+                    Beautiful New Countertops To Make Your Kitchen Standout
                     </h3>
                     <p className="text-[16px] leading-8 md:text-[17px] pt-6">
-                        Since 1987 we have specialized in kitchen remodeling using only the highest quality products and services to give you the overall best value.
-                        <br />
-                        We have been Voted the #1 Best Kitchen Remodeling Company, not just because of our high-quality workmanship, but also because we LOVE what we do and it shows in every remodeling project we complete.
-                        <br /><br />
-                        We have established ourselves as the go-to source for everything to complete your kitchen remodeling project - everything from custom cabinetry to electrical, plumbing, drywall, appliances, and flooring.
+                    One of the best ways to revitalize your kitchen is the installation of a beautiful new countertop.
+<br/>
+Countertops have a large impact on the practical function and design element of your kitchen. A well-chosen countertop makes your kitchen more useful and easier to maintain while also going a long way in defining a  aesthetic.
+<br/><br/>
+Quartz and granite are highly sought after as they are more durable, less susceptible to scratching, and are available in many different colors and styles.
                     </p>
 
 
@@ -172,15 +170,13 @@ export default function KitchenRemodelingPage({ frontmatter }) {
             {/* third section */}
 
             <div className="my-3  md:px-[6rem] mt-7 md:mt-[5rem]">
-                <h3 className="text-center">Kitchen Remodeling Services</h3>
-                <p className="text-[16px] leading-8 md:text-[17px] pt-6 md:px-[4rem] px-[2rem]">
-                    When remodeling your kitchen, the options are endless. Are you
-                    looking to completely renovate your space with brand new cabinets,
-                    countertops, and appliances? OR do you want to do a quick refresh and
-                    update your current cabinetry and repaint your walls? Whether you want
-                    to change your space with all new materials or simply revive what you already have,
-                    we offer design solutions to <strong> bring your dream kitchen to life</strong> .
-                </p>
+                <h3 className="text-center">Quartz Countertop Options</h3>
+                <ul className="text-center pt-8">
+                    <li>DURAQUARTZ COUNTERTOPS</li>
+                    <li>QUARTZITE COUNTERTOPS</li>
+                    <li>CAMBRIA QUARTZ COUNTERTOPS</li>
+                  
+                </ul>
 
 
                 <div className="flex flex-row gap-3 md:gap-[4rem]  md:px-[6rem] mt-[4rem]">
@@ -191,26 +187,46 @@ export default function KitchenRemodelingPage({ frontmatter }) {
 
 
 
-                    <div className="w-1/3">
-                        <ul className="list-none px-4 text-blue-500 text-[16px] font-semibold">
-                            <li>
-                                Cabinets
-                            </li>
-                            <li>Islands
-                                Countertops
-                            </li>
-                            <li>Backsplashes
-                                Tile
-                            </li>
-                            <li>Lighting
-                            </li>
-                            <li>Sinks & Faucets
-                                Range Hoods
-                            </li>
-                            <li>Flooring
-                            </li>
-                            <li>Accessories</li>
-                        </ul>
+                    <div className="w-full">
+                        <h3 className="text-[19px] font-bold">For All Your Kitchen Countertop Needs </h3>
+                        <p className="text-[16px] leading-8 md:text-[17px] pt-6">Our team of skilled professionals is dedicated to delivering the highest quality craftsmanship and exceptional customer service.
+<br/>
+With a wide range of materials and styles to choose from, we can help you find the perfect countertop that suits your taste and lifestyle. Whether you prefer the timeless elegance of granite or the sleek look of quartz, we have options that will exceed your expectations.
+<br/><br/>
+Trust us to handle every step of the process, from initial design consultation to final installation, ensuring a seamless and stress-free experience.</p>
+                        
+                        <div className="flex flex-col justify-start mt-6 px-4 md:px-[4rem] ml-[-1rem] md:ml-[-4rem]">
+                        <button className="bg-green-500 no-underline group w-[15rem] cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-block">
+                            <span className="absolute inset-0 overflow-hidden rounded-full">
+                                <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                            </span>
+                            <div className="relative flex space-x-2 items-center z-10 rounded-full bg-blue-600 py-4 px-1 ring-1 ring-white/10">
+                                <Link
+                                    href=""
+                                    className="text-center mx-auto"
+                                >
+                                    FREE IN-HOME ESTIMATE
+                                </Link>
+                                <svg
+                                    fill="none"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M10.75 8.75L14.25 12L10.75 15.25"
+                                        stroke="orange"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="1.5"
+                                    />
+                                </svg>
+                            </div>
+                            <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-yellow-400/0 via-yellow-400/90 to-yellow-400/0 transition-opacity duration-500 group-hover:opacity-40" />
+                        </button>
+                    </div>
+
                     </div>
                 </div>
 
@@ -274,13 +290,22 @@ export default function KitchenRemodelingPage({ frontmatter }) {
                     </div>
                 </div>
             </div>
+{/*  Onother section*/}
+<div className="px-[2rem] md:px-[6rem] py-[4rem]">
+<h3 className="text-center ">Benefits of Refacing Kitchen Cabinets</h3>
+                <p className="text-[16px] leading-8 md:text-[17px] py-8 md:px-[4rem] px-[2rem]">
+                Cabinet refacing is indeed a wonderful choice for homeowners who are considering a full kitchen renovation but wish to avoid the stress that comes with it. If you&apos;re fond of your kitchen&apos;s current layout or wish to retain your countertops, cabinet refacing provides a fantastic opportunity to refresh your cabinets without the time or   <strong>financial commitment required for a bespoke kitchen remodel.</strong> .
+                </p>
+            <h3 className="text-center py-5">Benefits of Refacing Kitchen Cabinets</h3>
+                <p className="text-[16px] leading-8 md:text-[17px] pt-6 md:px-[4rem] px-[2rem]">
+                At Modern Kitchen, we offer more than just a swift custom cabinet
+                 installation to residents. Our commitment is to deliver reliable, high-quality service that homeowners can depend on for many years. This involves taking the time to walk you through all available options, explaining the pros and cons of each, and assisting you in selecting the design and custom kitchen cabinetry that suits you best.  <strong>Modern Kitchen is proud to present our exclusive 10-Year Platinum Warranty, the finest in the industry.</strong> .
+                </p>
 
-
-
-
-<Footer/>
+</div>
+           
+            <Footer />
 
         </div>
-      
     )
 }

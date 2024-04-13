@@ -52,6 +52,11 @@ const App = ({ Component, pageProps }) => {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
+         <title>Modern Kitchen the best remodeling Company</title>
+        <meta
+          name="description"
+          content="we provide all your Kitchen Remodeling services"
+        />
       </Head>
       <Component {...pageProps} />
     </>
