@@ -18,6 +18,24 @@ const Home = ({ frontmatter }) => {
 
   return (
     <div>
+   <Head>
+        <title>Modern Kitchen - Cabinets</title>
+        <meta
+          name="description"
+          content="We are the best at Cabinets for all your kitchen needs"
+        />
+        <meta property="og:type" content="website" />
+
+        <link rel="icon" type="image/svg" sizes="32x32" href="/assets/v2.svg" />
+
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+      </Head>
+            
+                <Navbar/>
+    
       {/* Banner */}
       <section className="section pt-[15rem] pb-[50px]">
        <HomeHero/>
