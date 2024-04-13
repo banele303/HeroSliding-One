@@ -38,7 +38,7 @@ const Home = ({ frontmatter }) => {
          <div className="bg-black">       <Navbar/> </div>
     
       {/* Banner */}
-      <section className="section pb-[50px]">
+      <section className="section bg-black pb-[50px]">
        <HomeHero/>
       </section>
 
