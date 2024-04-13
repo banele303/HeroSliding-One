@@ -4,6 +4,7 @@ import Cta from "@layouts/components/Cta";
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "@layouts/components/Navbar";
 
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,9 +17,9 @@ const Home = ({ frontmatter }) => {
   const { title } = config.site;
 
   return (
-    <Base title={title}>
+    <div>
       {/* Banner */}
-      <section className="section pb-[50px]">
+      <section className="section pt-[15rem] pb-[50px]">
        <HomeHero/>
       </section>
 
@@ -170,7 +171,7 @@ Trust us to handle every step of the process, from initial design consultation t
 
       {/* Cta */}
       <Cta cta={call_to_action} />
-    </Base>
+    </div>
   );
 };
 
