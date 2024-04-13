@@ -6,17 +6,17 @@ import KitchenImage from "../../public/images/kitchen-hero3.jpg";
 export default function HomeHero() {
   const phoneNumber = '+27 83 300 0705';
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen bg-black">
 
       <div>
-        <div className="relative h-[100vh] md:h-[70vh] w-full">
+        <div className="relative h-[100vh] md:h-[70vh]  w-full">
           <Image  quality={100} src={KitchenImage} className="brightness-50 md:h-[60vh] h-full w-full object-cover" />
           <div
             className="absolute bottom-0 left-0 right-0 top-0 flex flex-col justify-center items-center gap-8"
           >
 
 
-            <div className="px-[2rem] ">
+            <div className="px-[2rem]  mt-[6rem]">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-[7rem] md:pl-[3rem] md:h-[680px]">
                 <div className="md:pl-[3rem]">
                   <h1 className="text-2xl md:text-5xl pt-[1rem] md:pt-[3rem] leading-9 text-slate-100 font-extrabold">
