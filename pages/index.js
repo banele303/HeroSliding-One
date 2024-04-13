@@ -34,7 +34,7 @@ const Home = ({ frontmatter }) => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
             
-                <Navbar/>
+         <div className="bg-black">       <Navbar/> </div>
     
       {/* Banner */}
       <section className="section pb-[50px]">
