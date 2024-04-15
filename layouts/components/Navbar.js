@@ -59,7 +59,7 @@ const Navbar = () => {
                                 type="button"
                                 className={`px-6  mx-[1rem]  font-poppins bg-blue-900   text-[14px]  md:text-[15px] border-none rounded-[3rem]  text-white   hover:scale-[1.1] transition-all duration-75 font-bold  font-Poppins`}
                             >
-                                <Link href="/contact-us">  + 27 813 375 3372</Link>
+                                <Link href="/contact-us">  + 27 81 375 3372</Link>
                             </button>
                         </div>
                         <div className="md:hidden mr-4" onClick={handleClick}>
@@ -104,7 +104,7 @@ const Navbar = () => {
                                 type="button"
                                 className={`px-6  mr-[2rem]  font-poppins bg-blue-900   text-[16px]  md:text-[18px] border-none rounded-[3rem]  text-white   hover:scale-[1.1] transition-all duration-75 font-bold  font-Poppins`}
                             >
-                                <Link href="/contact-us">  + 27 813 375 3372</Link>
+                                <Link href="/contact-us">  + 27 81 375 3372</Link>
                             </button>
                         </div>
                     </ul>
