@@ -18,13 +18,13 @@ export default function HomeHero() {
           >
 
 
-            <div className="px-[2rem] pt-[4rem]">
+            <div className="">
 
             <div className="px-[2rem]  mt-[6rem]">
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-[7rem] md:pl-[3rem] md:h-[680px]">
                 <div className="md:pl-[3rem]">
-                  <h1 className="text-2xl md:text-5xl pt-[1rem] md:pt-[3rem] leading-9 text-slate-100 font-extrabold">
+                  <h1 className="text-2xl md:text-5xl pt-[5rem] md:pt-[3rem] leading-9 text-slate-100 font-extrabold">
                  BEST KITCHEN REMODELING COMPANY
                   </h1>
                   <p className="text-xl md:text-2xl py-6   text-slate-200 font-extrabold">
@@ -64,7 +64,7 @@ export default function HomeHero() {
                  
                 </div>
                 <div>
-                  <div className="container mx-auto md:h-[500px] md:pt-[2rem]">
+                  <div className="container mx-auto md:h-[500px] md:pt-[2rem] w-full mb-2 md:mb-[10rem]">
                     <NewForm/>
                   </div>
                 </div>

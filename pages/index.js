@@ -1,11 +1,9 @@
 import config from "@config/config.json";
-import Base from "@layouts/Baseof";
 import Cta from "@layouts/components/Cta";
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
 import Link from "next/link";
 
-import Head from "next/head";
 import Footer from "@layouts/partials/Footer";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -26,7 +24,7 @@ const Home = ({ frontmatter }) => {
 
 
       {/* Features */}
-      <section className="section bg-theme-light">
+      <section className="section bg-theme-light pt-[13rem] md:pt-2">
         <div className="container">
           <div className="text-center">
             <h2>{markdownify(feature.title)}</h2>
@@ -172,6 +170,8 @@ const Home = ({ frontmatter }) => {
 
       {/* Cta */}
       <Cta cta={call_to_action} />
+
+      <Footer/>
     </div>
   );
 };
