@@ -10,17 +10,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import { getListPage } from "../lib/contentParser";
 import HomeHero from "@layouts/components/home-hero";
+import Navbar from "@layouts/components/Navbar";
 
 const Home = ({ frontmatter }) => {
   const { banner, feature, services, workflow, call_to_action } = frontmatter;
   const { title } = config.site;
 
   return (
-    <Base title={title}>
+    <div>
+      <Navbar/>
       {/* Banner */}
-      <section className="section pb-[50px]">
+     <div className=""></div>
        <HomeHero/>
-      </section>
+     
 
       {/* Features */}
       <section className="section bg-theme-light">
@@ -114,9 +116,9 @@ const Home = ({ frontmatter }) => {
           </section>
         );
       })}
- <div className="w-full">
+ <div className="w-full flex flex-col justify-center items-center px-[2rem] md:px-[6rem]">
                         <h3 className="text-[19px] font-bold">For All Your Kitchen Countertop Needs </h3>
-                        <p className="text-[16px] leading-8 md:text-[17px] pt-6">Our team of skilled professionals is dedicated to delivering the highest quality craftsmanship and exceptional customer service.
+                        <p className="text-[16px] leading-8 md:text-[17px] pt-6 ">Our team of skilled professionals is dedicated to delivering the highest quality craftsmanship and exceptional customer service.
 <br/>
 With a wide range of materials and styles to choose from, we can help you find the perfect countertop that suits your taste and lifestyle. Whether you prefer the timeless elegance of granite or the sleek look of quartz, we have options that will exceed your expectations.
 <br/><br/>
@@ -170,7 +172,7 @@ Trust us to handle every step of the process, from initial design consultation t
 
       {/* Cta */}
       <Cta cta={call_to_action} />
-    </Base>
+    </div>
   );
 };
 

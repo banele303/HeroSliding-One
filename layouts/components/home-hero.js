@@ -9,14 +9,14 @@ export default function HomeHero() {
     <div className="relative h-screen">
 
       <div>
-        <div className="relative h-[100vh] md:h-[70vh] w-full">
-          <Image  quality={100} src={KitchenImage} className="brightness-50 md:h-[60vh] h-full w-full object-cover" />
+        <div className="relative h-[100vh] md:h-[100vh] w-full">
+          <Image  quality={100} src={KitchenImage} className="brightness-50 md:h-[100vh] h-full w-full object-cover" />
           <div
             className="absolute bottom-0 left-0 right-0 top-0 flex flex-col justify-center items-center gap-8"
           >
 
 
-            <div className="px-[2rem] ">
+            <div className="px-[2rem] pt-[4rem]">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-[7rem] md:pl-[3rem] md:h-[680px]">
                 <div className="md:pl-[3rem]">
                   <h1 className="text-2xl md:text-5xl pt-[1rem] md:pt-[3rem] leading-9 text-slate-100 font-extrabold">
@@ -59,7 +59,7 @@ export default function HomeHero() {
                  
                 </div>
                 <div>
-                  <div className="container mx-auto md:h-[500px]">
+                  <div className="container mx-auto md:h-[500px] md:pt-[2rem]">
                     <NewForm/>
                   </div>
                 </div>
