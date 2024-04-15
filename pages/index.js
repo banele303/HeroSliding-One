@@ -4,7 +4,9 @@ import Cta from "@layouts/components/Cta";
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
 import Link from "next/link";
-
+import Navbar from "@layouts/components/Navbar";
+import Head from "next/head";
+import Footer from "@layouts/partials/Footer";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
@@ -17,10 +19,9 @@ const Home = ({ frontmatter }) => {
   const { title } = config.site;
 
   return (
-    <div>
-      <Navbar/>
+    <Base title={title}>
       {/* Banner */}
-     <div className=""></div>
+      <section className="section pb-[50px]">
        <HomeHero/>
      
 
@@ -116,7 +117,7 @@ const Home = ({ frontmatter }) => {
           </section>
         );
       })}
- <div className="w-full flex flex-col justify-center items-center px-[2rem] md:px-[6rem]">
+ <div className="w-full">
                         <h3 className="text-[19px] font-bold">For All Your Kitchen Countertop Needs </h3>
                         <p className="text-[16px] leading-8 md:text-[17px] pt-6 ">Our team of skilled professionals is dedicated to delivering the highest quality craftsmanship and exceptional customer service.
 <br/>
@@ -159,11 +160,11 @@ Trust us to handle every step of the process, from initial design consultation t
                     </div>
 <div className="px-[2rem] md:px-[6rem] py-[4rem]">
 <h3 className="text-center ">Benefits of Refacing Kitchen Cabinets</h3>
-                <p className="text-[16px] leading-8 md:text-[17px] py-8 md:px-[4rem] px-[2rem]">
+                <p className="text-[16px] leading-8 md:text-[17px] py-8 ">
                 Cabinet refacing is indeed a wonderful choice for homeowners who are considering a full kitchen renovation but wish to avoid the stress that comes with it. If you&apos;re fond of your kitchen&apos;s current layout or wish to retain your countertops, cabinet refacing provides a fantastic opportunity to refresh your cabinets without the time or   <strong>financial commitment required for a bespoke kitchen remodel.</strong> .
                 </p>
             <h3 className="text-center py-5">Benefits of Refacing Kitchen Cabinets</h3>
-                <p className="text-[16px] leading-8 md:text-[17px] pt-6 md:px-[4rem] px-[2rem]">
+                <p className="text-[16px] leading-8 md:text-[17px] pt-6 ">
                 At Modern Kitchen, we offer more than just a swift custom cabinet
                  installation to residents. Our commitment is to deliver reliable, high-quality service that homeowners can depend on for many years. This involves taking the time to walk you through all available options, explaining the pros and cons of each, and assisting you in selecting the design and custom kitchen cabinetry that suits you best.  <strong>Modern Kitchen is proud to present our exclusive 10-Year Platinum Warranty, the finest in the industry.</strong> .
                 </p>
@@ -172,7 +173,7 @@ Trust us to handle every step of the process, from initial design consultation t
 
       {/* Cta */}
       <Cta cta={call_to_action} />
-    </div>
+    </Base>
   );
 };
 
