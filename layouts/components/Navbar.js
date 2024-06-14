@@ -42,17 +42,17 @@ const Navbar = () => {
                         <div className="hidden md:flex pr-4">
                             <ul className="hidden md:flex ">
                                 <li className="md:ml-3 py-3  text-[19px] font-Poppins  px-6  border-5 border-sky-900 cursor-pointer text-white  font-bold">
-                                    <Link href="/">HOME</Link>
+                                    <Link href="/">Home</Link>
                                 </li>
 
                                 <li className="md:ml-3 py-3 px-2 border-5 border-sky-900  text-[19px] font-Poppins cursor-pointer text-white font-bold">
-                                    <Link href="/kitchen-remodeling">KITCHEN REMODELING</Link>
+                                    <Link href="/kitchen-remodeling">Painting</Link>
                                 </li>
                                 <li className="md:ml-3 py-3 px-2 border-5 border-sky-900  text-[19px] font-Poppins cursor-pointer text-white font-bold">
-                                    <Link href="/cabinet-refacing">CABINETS REFACING</Link>
+                                    <Link href="/cabinet-refacing">Bathroom</Link>
                                 </li>
                                 <li className="md:ml-3 py-3 px-2  border-5 border-sky-900 cursor-pointer text-[19px] font-Poppins text-white font-bold">
-                                    <Link href="/kitchen-countertop">COUNTERTOP</Link>
+                                    <Link href="/kitchen-countertop">Kitchen Remodeling</Link>
                                 </li>
                             </ul>
                             <button
@@ -64,13 +64,13 @@ const Navbar = () => {
                         </div>
                         <div className="md:hidden mr-4" onClick={handleClick}>
                             {!nav ? (
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-white">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                                 </svg>
 
 
                             ) : (
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                                 </svg>
 
@@ -86,16 +86,16 @@ const Navbar = () => {
                         }
                     >
                         <li className=" md:ml-3 py-3 px-6 font-Poppins border-5 border-sky-900 cursor-pointer text-white font-bold">
-                            <Link href="/">HOME PAGE</Link>
+                            <Link href="/">Home</Link>
                         </li>
                         <li className=" md:ml-3 py-3 px-6 font-Poppins border-5 border-sky-900 cursor-pointer text-white font-bold">
-                            <Link href="/kitchen-remodeling">KITCHEN REMODELING</Link>
+                            <Link href="/kitchen-remodeling">Painting</Link>
                         </li>
                         <li className="md:ml-3 py-3 px-6 border-5 border-sky-900  text-[19px] font-Poppins cursor-pointer text-white font-bold">
-                        <Link href="/cabinet-refacing">CABINETS REFACING</Link>
+                        <Link href="/cabinet-refacing">Bathrooms</Link>
                         </li>
                         <li className="md:ml-3 py-3 px-6 font-Poppins border-5 border-sky-900 cursor-pointer text-white font-bold">
-                        <Link href="/kitchen-countertop">COUNTERTOP</Link>
+                        <Link href="/kitchen-countertop">Kitchens</Link>
                         </li>
                        
 

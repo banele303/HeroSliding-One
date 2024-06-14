@@ -25,10 +25,10 @@ export default function HomeHero() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-[7rem] md:pl-[3rem] md:h-[680px]">
                 <div className="md:pl-[3rem]">
                   <h1 className="text-2xl md:text-5xl pt-[5rem] md:pt-[3rem] leading-9 text-slate-100 font-extrabold">
-                 BEST KITCHEN REMODELING COMPANY
+               Modern Renovations
                   </h1>
                   <p className="text-xl md:text-2xl py-6   text-slate-200 font-extrabold">
-                  KITCHEN REMODELING| MAKE OVER | REFACING & REPLACING
+                  House Renovations| MAKE OVER | Refacing & Painting
                   </p>
                   <div className="flex flex-col justify-start mt-6 px-4 md:px-[4rem] ml-[1rem] md:ml-[-4rem]">
                     <button className="bg-blue-500 no-underline group w-[15rem] cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-block">
